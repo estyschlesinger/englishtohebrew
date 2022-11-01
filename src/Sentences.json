@@ -1,0 +1,32 @@
+[
+	{
+		"englishSentence": "The dog chased the ball.",
+		"hebrewSentence": "הילד רדף אחרי הכדור.",
+		"alreadyLearned": "True",
+		"grammarRule": "lorem eu metus. In lorem. Donec elementum, lorem ut"
+	},
+	{
+		"englishSentence": "happiness",
+		"hebrewSentence": "et magnis dis parturient montes, nascetur ridiculus mus.",
+		"alreadyLearned": "True",
+		"grammarRule": "nisi magna"
+	},
+	{
+		"englishSentence": "",
+		"hebrewSentence": "massa lobortis ultrices. Vivamus rhoncus. Donec est. Nunc",
+		"alreadyLearned": "True",
+		"grammarRule": "facilisis. Suspendisse"
+	},
+	{
+		"englishSentence": "",
+		"hebrewSentence": "consequat purus. Maecenas libero est, congue a, aliquet",
+		"alreadyLearned": "True",
+		"grammarRule": "luctus vulputate,"
+	},
+	{
+		"englishSentence": "happiness",
+		"hebrewSentence": "ipsum primis in faucibus orci luctus et ultrices",
+		"alreadyLearned": "False",
+		"grammarRule": "purus, in molestie tortor nibh sit amet"
+	}
+]

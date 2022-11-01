@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Home from './pages/Home';
+import DictionaryPage  from './pages/DictionaryPage';
+import Navbar from './Navbar';
+import  CardGame  from './pages/CardGame';
+import  ShowNewSentence  from './pages/ShowNewSentence';
 function App() {
+let MyVar
+switch(window.location.pathname){
+  case "/":
+    MyVar = <Home/>
+    break
+  case "/DictionaryPage":
+    MyVar = <DictionaryPage/>
+    break
+  case "/CardGame":
+    MyVar = <CardGame />
+    break
+  case "/ShowNewSentence":
+    MyVar = <ShowNewSentence />
+    break
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      {MyVar}
+    </>
   );
 }
 

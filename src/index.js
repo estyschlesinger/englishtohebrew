@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { CreateCard } from './components/CreateCard';
+import { ListWords } from './components/ListWords';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>
+    {/* <CreateCard /> */}
+    {/* <ListWords /> */}
+    
+    </>
 );
 
 // If you want to start measuring performance in your app, pass a function
