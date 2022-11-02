@@ -6,7 +6,7 @@ export default function Home(){
     return (
         <div>
     <h1 className="bodyText">ברוכים הבאים ללימוד אנגלית</h1>
-    <p className="bodyText">אז התייאשת מללמוד אנגלית, נכון? בואו ואוכיח לכם שאתם כבר אלופי השפה, ובואו נשפר ביחד</p>
+    <p className="bodyText">אז התייאשת מללמוד אנגלית, נכון? בואו ואוכיח לכם אחרת</p>
     
     <div className="button-group">
     {/* <button onClick={testHandler}>בדוק את הידע שלי באנגלית</button>

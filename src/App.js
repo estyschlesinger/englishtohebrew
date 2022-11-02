@@ -3,7 +3,6 @@ import './App.css';
 import Home from './pages/Home';
 import DictionaryPage  from './pages/DictionaryPage';
 import Navbar from './Navbar';
-import  CardGame  from './pages/CardGame';
 import  ShowNewSentence  from './pages/ShowNewSentence';
 function App() {
 let MyVar
@@ -14,9 +13,9 @@ switch(window.location.pathname){
   case "/DictionaryPage":
     MyVar = <DictionaryPage/>
     break
-  case "/CardGame":
-    MyVar = <CardGame />
-    break
+  // case "/CardGame":
+  //   MyVar = <CardGame />
+  //   break
   case "/ShowNewSentence":
     MyVar = <ShowNewSentence />
     break
