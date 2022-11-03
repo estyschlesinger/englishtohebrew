@@ -1,6 +1,3 @@
-import  Games  from "../components/Games"
-import Start from "../components/Start"
-import Tests from "../components/Tests"
 
 export default function Home(){
     return (
@@ -13,6 +10,7 @@ export default function Home(){
     <button onClick={startHandler}>התחל קורס</button>
     <button onClick={gameLearnHandler}>משחקים</button>  */}
     </div>
+    
     </div>
         )
 }

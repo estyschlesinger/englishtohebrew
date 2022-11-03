@@ -1,0 +1,19 @@
+[
+	{
+		"verb": ["jump", "jumps", "jumping", "jumped", "will jump", "to jump"],
+        "aboutVerb":
+		{
+            "past" : "jumped",
+            "present" : "jumps",
+            "future" : "will jump",
+            "gerund":"jumping",
+            "infinitive": "to jump",
+            "infinitiveTrans": "לקפוץ"
+
+        }
+	},
+	{
+		
+    }
+
+]

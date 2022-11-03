@@ -5,11 +5,11 @@ import Dictionary from "../Dictionary.json"
     return(
         <div>
 <table>
-<thead>
+<tr>
                 <th>English</th>
                 <th>Hebrew</th>
                 <th>Part of Speech</th>
-            </thead>
+            </tr>
 
      {Dictionary.map(Dictionary => {
     return (

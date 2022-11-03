@@ -1,30 +1,31 @@
 [
 	{
-		"englishSentence": "The dog chased the ball.",
+		"englishSentence": "The dog jumped over the wall.",
 		"hebrewSentence": "הילד רדף אחרי הכדור.",
-		"alreadyLearned": "True",
+		"partOfSpeech": ["Article","Noun", "Verb", "Direction", "Article", "Noun"],
+		"alreadyLearned": "False",
 		"grammarRule": "lorem eu metus. In lorem. Donec elementum, lorem ut"
 	},
 	{
 		"englishSentence": "happiness",
 		"hebrewSentence": "et magnis dis parturient montes, nascetur ridiculus mus.",
-		"alreadyLearned": "True",
+		"alreadyLearned": "False",
 		"grammarRule": "nisi magna"
 	},
 	{
-		"englishSentence": "",
+		"englishSentence": "I didn't want to do it.",
 		"hebrewSentence": "massa lobortis ultrices. Vivamus rhoncus. Donec est. Nunc",
-		"alreadyLearned": "True",
+		"alreadyLearned": "False",
 		"grammarRule": "facilisis. Suspendisse"
 	},
 	{
-		"englishSentence": "",
+		"englishSentence": "My mom is a nurse.",
 		"hebrewSentence": "consequat purus. Maecenas libero est, congue a, aliquet",
-		"alreadyLearned": "True",
+		"alreadyLearned": "False",
 		"grammarRule": "luctus vulputate,"
 	},
 	{
-		"englishSentence": "happiness",
+		"englishSentence": "Where were you last night?",
 		"hebrewSentence": "ipsum primis in faucibus orci luctus et ultrices",
 		"alreadyLearned": "False",
 		"grammarRule": "purus, in molestie tortor nibh sit amet"

@@ -1,10 +1,14 @@
 
-import './App.css';
+import './css/App.css';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import DictionaryPage  from './pages/DictionaryPage';
-import Navbar from './Navbar';
-import  ShowNewSentence  from './pages/ShowNewSentence';
+import ShowNewSentence  from './pages/ShowNewSentence';
+import MyHook from "./components/MyHook"
+import TicTacToe from "./components/TicTacToe"
+import Alphabet from './components/Alphabet';
 function App() {
+
 let MyVar
 switch(window.location.pathname){
   case "/":
@@ -13,12 +17,16 @@ switch(window.location.pathname){
   case "/DictionaryPage":
     MyVar = <DictionaryPage/>
     break
-  // case "/CardGame":
-  //   MyVar = <CardGame />
-  //   break
   case "/ShowNewSentence":
     MyVar = <ShowNewSentence />
     break
+
+   case "/TicTacToe":
+    MyVar = <TicTacToe/> 
+    break
+   case "/Alphabet":
+    MyVar = <Alphabet/>
+    break 
 }
 
   return (

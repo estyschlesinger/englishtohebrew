@@ -1,0 +1,24 @@
+.square{
+
+    background-color: #57903F;
+    height: 70px;
+    width: 70px;
+    float:left;
+    text-align: center;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .board-row:after{ 
+    clear:both;
+  }
+  
+  .status {
+    margin-bottom: 15px;
+  }
+  
+  .game{
+    display: flex;
+  }

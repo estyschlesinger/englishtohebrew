@@ -1,11 +1,10 @@
-.splitToTwo{
-
-  display: flex;
-  margin: 5px;
-  text-align: center;
-
+ span:hover .hide{
+  display:inline-block
 }
 
+.hide{
+  display: none;
+}
 .card-grid{
   margin-top: 40px;
   display: grid;
