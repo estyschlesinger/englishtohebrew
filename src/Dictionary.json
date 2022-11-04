@@ -5,7 +5,8 @@
 		"hebrewTrans": "שמחה",
 		"grammarRule": 979,
 		"alreadyLearned": "True",
-        "partOfSpeech": "Noun"
+        "partOfSpeech": ["Noun", "abstract"]
+
 	},
 	{
         "id": 2,
@@ -29,7 +30,7 @@
 		"hebrewTrans": "שולחן",
 		"grammarRule": 594,
 		"alreadyLearned": "True",
-        "partOfSpeech": "Noun"
+        "partOfSpeech": ["Noun", "singular"]
 	},
     {
         "id": 5,

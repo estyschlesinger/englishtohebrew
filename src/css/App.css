@@ -1,10 +1,4 @@
- span:hover .hide{
-  display:inline-block
-}
 
-.hide{
-  display: none;
-}
 .card-grid{
   margin-top: 40px;
   display: grid;
@@ -21,35 +15,6 @@
 }
 .tr{
   display: inline-block;
-}
-.navigat{
-  text-decoration: none;
-  background-color: grey;
-  display: inline-block;
-  color: black;
-  font-family: 'Courier New', Courier, monospace;
-  
-}
-.navigat:hover {
- background-color:darkslategray;
-}
-
-.nav li  {
-  list-style: none;
-  display: inline-block;
-  padding: 5px;
-}
-.nav {
-  margin-top: 30px;
-}
-.site-title{
-  text-decoration: none;
-  font-size:large;
-color: #57903F;
-  padding: 20px;
-  margin: 40%;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  
 }
 
 .card{

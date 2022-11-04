@@ -7,6 +7,7 @@ import ShowNewSentence  from './pages/ShowNewSentence';
 import MyHook from "./components/MyHook"
 import TicTacToe from "./components/TicTacToe"
 import Alphabet from './components/Alphabet';
+import LearnAlphabet from './components/LearnAlphabet';
 function App() {
 
 let MyVar
@@ -27,6 +28,9 @@ switch(window.location.pathname){
    case "/Alphabet":
     MyVar = <Alphabet/>
     break 
+   case "/LearnAlphabet":
+    MyVar = <LearnAlphabet/>
+    break
 }
 
   return (

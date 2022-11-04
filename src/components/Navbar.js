@@ -1,56 +1,59 @@
-import '../css/App.css'
+import '../css/Navbar.css'
 
 export default function Navbar(){
 
     return <nav className="nav" dir='rtl'>
-        <a className="site-title" href="/">The Languagician</a>
-   <ul>
+
+ <a className="site-title" href="/">HEVANTI</a>
+
+   <ul className='nav-items'>
+
    <li>
-        <a className="navigat" href="/">דף הבית</a>
+        <a className="menu-item" href="/">דף הבית</a>
     </li>
     
-   <li>
-        <span className='navigat'>בואו נלמד לקרוא באנגלית</span>
+   <li><div className='wholeDrop'>
+        <div className='menu-item'>בואו נלמד לקרוא באנגלית</div>
         
-        <div>
+        <div className='has-submenu'>
             <div>
-            <a className="menu-dropdown-item hide" href="/Alphabet">לימוד אותיות באנגלית</a>
+            <a className="menu-dropdown-item hide" href="/LearnAlphabet">לימוד אותיות באנגלית</a>
             </div>
             <div>
             <a className="menu-dropdown-item hide" href="/Alphabet">מבחן באותיות באנגלית</a>
             </div>
             <div>
-            <a className="menu-dropdown-item hide" href="/Alphabet">מבחן באותיות באנגלית</a>
+            <a className="menu-dropdown-item hide" href="/Alphabet">תרגול אותיות באנגלית</a>
             </div>
         </div>
-       
+        </div>
     </li>
     <li>
-        <a className="navigat" href="/ShowNewSentence">ללמוד משפט חדש</a>
+        <a className="menu-item" href="/ShowNewSentence">ללמוד משפט חדש</a>
     </li>
 
-    <li>
-        <span className="navigat" >משחקים</span> 
+    <li><div className='wholeDrop'>
+        <div className="menu-item" >משחקים</div> 
         
           
-        <div>
+        <div className='has-submenu'>
             <div>
             <a className="menu-dropdown-item hide" href="/TicTacToe">משחק האיקס ואפס</a>
             </div>
             <div>
-            <a className="menu-dropdown-item hide" href="/TicTacToe">משחק האיקס ואפס</a>
+            <a className="menu-dropdown-item hide" href="/TicTacToe">משחק זיכרון</a>
             </div>
             <div>
-            <a className="menu-dropdown-item hide" href="/TicTacToe">משחק האיקס ואפס</a>
+            <a className="menu-dropdown-item hide" href="/TicTacToe">משחק אישיות </a>
             </div>
+        </div>
         </div>
     </li>
     
-   
-    
     <li>
-        <a className="navigat" href="/DictionaryPage">אוצר מילים </a>
+        <a className="menu-item" href="/DictionaryPage">אוצר מילים </a>
     </li>
+
    </ul>
     </nav>
 }
