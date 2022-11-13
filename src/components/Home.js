@@ -1,4 +1,8 @@
 
+import Button from '@mui/material/Button';
+
+
+
 export default function Home(){
     return (
         <div>
@@ -6,9 +10,10 @@ export default function Home(){
     <p className="bodyText">אז התייאשת מללמוד אנגלית, נכון? בואו ואוכיח לכם אחרת</p>
     
     <div className="button-group">
-    {/* <button onClick={testHandler}>בדוק את הידע שלי באנגלית</button>
-    <button onClick={startHandler}>התחל קורס</button>
-    <button onClick={gameLearnHandler}>משחקים</button>  */}
+
+        
+    {<Button variant="contained" color="primary" align="center">בא לי ללמוד</Button>}
+    
     </div>
     
     </div>

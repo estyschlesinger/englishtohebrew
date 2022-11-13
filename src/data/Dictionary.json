@@ -1,0 +1,12 @@
+ [ 
+	{
+        "id": 1,
+		"englishTrans": "happiness",
+		"hebrewTrans": "שמחה",
+		"grammarRule": [0],
+		"alreadyLearned": "False",
+        "partOfSpeech": ["noun", "abstract"]
+
+	}
+	
+]

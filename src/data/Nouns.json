@@ -1,0 +1,10 @@
+  [
+    {
+        "id": 0,
+        "englishSingular": "dog",
+        "hebrewSingular":"כלב" ,
+        "englishPlural": "dogs",
+        "hebrewPlural": "כלבים",
+        "type" : "regular"
+    }
+]

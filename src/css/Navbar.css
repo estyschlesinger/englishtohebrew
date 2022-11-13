@@ -1,4 +1,4 @@
-.nav{
+/* .nav{
     height: 10vh;
     background: #1b1919;
     display: flex;
@@ -39,8 +39,8 @@ align-items: center;
     padding: 6px 16px;
     border-radius: 5px;
 }
-
-.menu-item:hover{
+/*  */
+/* .menu-item:hover{
     background: rgb(44, 181, 34);
 }
 
@@ -48,12 +48,18 @@ align-items: center;
   display: block;
 }
 
+.wholeDrop .menu-item:hover{
+  background: none;
+}
+
 .has-submenu{
-width: 13rem;
+width: 90%;
 position: absolute;
 list-style: none;
-text-align: start;
+text-align: center;
 display: none;
+/* height: 100%; */
+/* 
 }
 
 .has-submenu a {
@@ -69,3 +75,24 @@ display: none;
 }
 
 
+.has-submenu a:hover{
+  background: rgb(44, 230, 100);
+}
+
+.my-icon{
+  color: white;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  
+}
+.my-icon a{
+  
+  display: block;
+}
+
+.wholeDrop{
+  position: relative;
+  
+  
+} */  

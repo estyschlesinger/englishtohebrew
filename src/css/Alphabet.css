@@ -1,4 +1,34 @@
-.textLetter{
+ .textLetter{
     font-size:40px;
     margin-left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ text-align: center;
+}
+
+.part-of-quiz{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+.alphabet-quiz{
+width: 400px;
+height: 500px;
+display: block;
+
+}
+
+.input-box{
+    height: 30px;
+    text-align: center;
+}
+
+.simple-text{
+    /* background: 2px rgb(44, 181, 34); */
+    padding: 10px;
+    font-family: monospace;
+    
+   
 }

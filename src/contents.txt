@@ -1,4 +1,42 @@
 
 In this project, I attempt teaching English to Hebrew speakers
 
-Starting with the alphabet
+pages:
+
+PROFILE
+ - my account
+ - settings
+ - logout
+
+
+ - HOME 
+
+
+LEARNING TO READ
+ - teaching alphabet
+ - testing knowledge of alphabet
+ - practicing alphabet
+ - teaching words
+ - teaching word sound rules
+ - testing word reading
+ - practicing reading
+
+
+ LEARNING ENGLISH 
+ - show sentence 
+  parse sentence
+  translate sentence
+  reinforce grammar
+  test knowledge
+
+ - learn grammar rule
+ see examples of rule
+
+
+
+ GAMES
+ - memory game 
+
+
+ - DICTIONARY / GLOSSARY 
+ 

@@ -1,10 +1,10 @@
-import Verbs from "../Verbs.json"
+import Verbs from "../data/Verbs.json"
 
 //here the verbs in the sentence will be parsed
 
 const ParseVerb = (props) => {
 
-    return <h1>{props.verb}</h1>
+    return <h1>{props.verb[0]}</h1>
 }
 
 

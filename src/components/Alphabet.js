@@ -1,37 +1,10 @@
 import {useState, useEffect} from "react"
-import "../css/Alphabet.css"
+// import "../css/Alphabet.css"
+import React from "react"
+import Reading, {alpha} from "./Reading"
+import { englishAlphInfo } from "../data/EnglishAlphInfo"
 
 function Alphabet(){
-
-const englishAlph = [
-    {englishAlph: 'a', heb:'א'},
-    {englishAlph: 'b', heb:'ב'},
-    {englishAlph: 'c', heb:'ק'},
-    {englishAlph: 'd', heb:'ד'},
-    {englishAlph: 'e', heb:'ע'},
-    {englishAlph: 'f', heb:'פ'},
-    {englishAlph: 'g', heb:'ג'},
-    {englishAlph: 'h', heb:'ה'},
-    {englishAlph: 'i', heb:'י'},
-    {englishAlph: 'j', heb:'דג'},
-    {englishAlph: 'k', heb:'ק'},
-    {englishAlph: 'l', heb:'ל'},
-    {englishAlph: 'm', heb:'מ'},
-    {englishAlph: 'n', heb:'נ'},
-    {englishAlph: 'o', heb:'א'},
-    {englishAlph: 'p', heb:'פ'},
-    {englishAlph: 'q', heb:'קו'},
-    {englishAlph: 'r', heb:'ר'},
-    {englishAlph: 's', heb:'ס'},
-    {englishAlph: 't', heb:'ט'},
-    {englishAlph: 'u', heb:'א'},
-    {englishAlph: 'v', heb:'ו'},
-    {englishAlph: 'w', heb:'ו'},
-    {englishAlph: 'x', heb:'קס'},
-    {englishAlph: 'y', heb:'י'},
-    {englishAlph: 'z', heb:'ז'},
-
-]
 
 const [input, setInput] = useState('')
 const [current, setCurrent] = useState(0)
@@ -42,7 +15,7 @@ const [maxStreak, setMaxStreak] = useState(0)
 const [error, setError]= useState(false)
 
 const setRandomEnglish = () => {
-    const randomIndex = Math.floor(Math.random() * englishAlph.length)
+    const randomIndex = Math.floor(Math.random() * englishAlphInfo.length)
     setCurrent(randomIndex)
 }
 
@@ -53,23 +26,24 @@ const handleChange = evt => {
 const handleSubmit = evt => {
     evt.preventDefault()
 
-    if(input.toLowerCase() ===  englishAlph[current].heb) {
+    if(input.toLowerCase() ===  englishAlphInfo[current].heb) {
         setStreak(streak + 1)
         setMaxStreak(Math.max(streak +1, maxStreak))
         setError(false)
 
         localStorage.setItem('maxStreak', Math.max(streak, maxStreak))
-        localStorage.setItem('streak',streak +1)
+        localStorage.setItem('streak', streak +1)
     }
     else {
         setStreak(0)
-        setError(`Wrong! The correct answer for ${englishAlph[current].heb} is ${englishAlph[current].englishAlph} `)
+        setError(`Wrong! The correct answer for ${englishAlphInfo[current].englishAlph} is ${englishAlphInfo[current].heb} `)
     
        localStorage.setItem('streak', 0)
     }
 
     setInput('')
     setRandomEnglish()
+    //let x= setTimeout(setError("j", 4000))
 }
 
  useEffect(() => {
@@ -79,23 +53,26 @@ setMaxStreak(parseInt(localStorage.getItem('maxStreak' ))|| 0)
  },[])
 
     return(
-        <div>
-            <h1>English Alphabet Quiz</h1>
-            {streak}/{maxStreak}
-
-            <div className="textLetter">
-                {englishAlph[current].englishAlph}
+        <div className="alphabet-quiz">
+            <h1 className="part-of-quiz">English Alphabet Quiz</h1>
+            <div className="part-of-quiz simple-text">Current streak: {streak} Maximum streak: {maxStreak}</div>
+            <div className="part-of-quiz textLetter">
+                {/* {englishAlph[current].englishAlph} */}
+                {englishAlphInfo[current].englishAlph}
             </div>
 
             <div>
-                <form onSubmit={handleSubmit}>
+                <form className="part-of-quiz" onSubmit={handleSubmit}>
 
                     <input type="text"
                     value={input}
+                    className="part-of-quiz input-box"
                     onChange={handleChange} />
                 </form>
             </div>
             {error && <p>{error}</p>}
+
+        
         </div>
     )
 }

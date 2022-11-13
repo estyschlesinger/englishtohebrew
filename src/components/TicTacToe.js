@@ -1,13 +1,19 @@
 import React from "react";
-import '../css/TicTacToe.css'
-function Square(props) {
+ import '../css/TicTacToe.css'
+//import Button  from "@mui/material/Button";
+import { Button } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { Stack } from "@mui/material";
+import {theme} from '../App'
 
+function Square(props) {
     
       return (
-        <button className="square" 
-          onClick= {props.onClick}>
+        <Button className="square" 
+          onClick= {props.onClick} color="primary">
           {props.value}
-        </button>
+          
+        </Button>
       );
     }
   
@@ -91,6 +97,7 @@ if(calculateWinner(squares) || squares[i]) {
             <div>{/* status */}</div>
             <ol>{/* TODO */}</ol>
           </div>
+          
         </div>
       );
     }
